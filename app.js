@@ -6,12 +6,12 @@ const mongoose = require('mongoose');
 const postmodel = require('./model/post')
 
 const path=require('path');
-app.use(express.static(path.join(__dirname+'/dist/FrontEnd')));
+app.use(express.static(path.join(__dirname+'/dist/Frontend')));
 
 // Task2: create mongoDB connection 
 
 
-mongoose.connect("mongodb+srv://ananthan:ananthan@cluster0.0fd0sen.mongodb.net/exam?retryWrites=true&w=majority&appName=Cluster0")
+mongoose.connect("mongodb+srv://athulps:athulps@athulps.80h2hoh.mongodb.net/?retryWrites=true&w=majority&appName=athulps")
 .then(()=>{
     console.log('connected to db')
 })
